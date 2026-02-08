@@ -1,0 +1,24 @@
+# Brawl Lookup Pro - TODO
+
+- [x] Schema do banco: tabela favorites (userId, type, tag, name, trophies, icon)
+- [x] Schema do banco: tabela trophy_snapshots (para tracking de marcos)
+- [x] Backend: proxy para API oficial Brawl Stars (players, clubs, battlelog, rankings, brawlers)
+- [x] Backend: integração BrawlAPI (brawlers com imagens, eventos ativos, modos de jogo, ícones)
+- [x] Backend: cache inteligente com LRU (TTL curto para perfis, longo para dados estáticos)
+- [x] Backend: validação e normalização de tags
+- [x] Backend: rotas tRPC para favoritos (add, remove, list) - protectedProcedure
+- [x] Backend: notificações ao dono quando jogador favorito atinge marcos
+- [x] Frontend: tema visual roxo/amarelo estilo Brawlify (index.css, dark theme)
+- [x] Frontend: layout global com navegação top (Home, Rankings, Eventos, Perfil)
+- [x] Frontend: página Home com busca de jogadores/clubes e eventos ativos
+- [x] Frontend: página Player com perfil completo, brawlers, estatísticas
+- [x] Frontend: página PlayerBattles com histórico de batalhas
+- [x] Frontend: página Club com informações e membros
+- [x] Frontend: página Rankings (jogadores, clubes, brawlers por país)
+- [x] Frontend: página de Eventos ativos e rotação de mapas
+- [x] Frontend: sistema de favoritos (botão favoritar, lista no perfil)
+- [x] Frontend: página de Perfil do usuário com favoritos salvos
+- [x] Frontend: busca com validação de tags e tratamento de erros
+- [x] Frontend: design responsivo (mobile + desktop)
+- [x] Testes: Vitest para rotas tRPC principais
+- [x] Autenticação: Manus OAuth integrado

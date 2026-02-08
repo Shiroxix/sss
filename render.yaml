@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: brawl-lookup-pro
+    runtime: node
+    plan: free
+    buildCommand: pnpm install && pnpm build
+    startCommand: pnpm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: BRAWL_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: MANUS_OAUTH_CLIENT_ID
+        sync: false
+      - key: MANUS_OAUTH_CLIENT_SECRET
+        sync: false
+      - key: OWNER_OPEN_ID
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: VITE_APP_ID
+        sync: false
+      - key: OAUTH_SERVER_URL
+        sync: false
